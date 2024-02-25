@@ -13,9 +13,8 @@
     </div>
 
     <script>
-      document.addEventListener('keypress', e => {
-        let evtobj = window.event? event : e
-        if (evtobj.keyCode == 13 && evtobj.keyCode == 224) window.location.href = 'https://chores.zakventer.com' 
+      document.addEventListener('keydown', e => {
+        if (e.keyCode == 13 && e.keyCode == 224) window.location.href = 'https://chores.zakventer.com' 
       })
     </script>
   </body>
